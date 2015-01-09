@@ -50,4 +50,8 @@ gem 'autoprefixer-rails'
 
 gem 'simple_form'
 
+# Devise gem
+
+gem 'devise', '>= 3.2.4'
+
 
