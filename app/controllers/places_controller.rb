@@ -16,8 +16,6 @@ class PlacesController < ApplicationController
 		else
 			render :new, :status => :unprocessable_entity
 		end
-		current_user.places.create(place_params)
-		redirect_to root_path
 	end
 
 	def show
@@ -42,6 +40,7 @@ class PlacesController < ApplicationController
 			redirect_to root_path
 		else
 			render :edit, :status => :unprocessable_entity
+		end
 	end
 
 	def destroy
